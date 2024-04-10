@@ -12,7 +12,7 @@ _`.github`, `.editorconfig`, `.eslintrc`, `.gitattributes`, `.gitignore`, `.lint
 
 ---
 
-### Памятка
+### Памятка ...
 
 #### 1. Зарегистрируйтесь на Гитхабе
 
