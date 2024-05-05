@@ -1,0 +1,34 @@
+// .additional-product-card {
+
+// }
+
+.additional-product-card__title {
+  font-family: "Oswald", sans-serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #222222;
+  background-color: #ffffff;
+}
+
+.additional-product-card__content {
+  font-size: 14px;
+  line-height: 14px;
+}
+
+// .additional-product-card__name-product {
+
+// }
+
+// .additional-product-card__price-product {
+
+// }
+
+
+.additional-product-card__button {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: $base-color-green;
+  font-family: "Oswald", sans-serif;
+  text-decoration: none;
+}
