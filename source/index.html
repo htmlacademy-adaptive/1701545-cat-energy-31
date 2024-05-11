@@ -16,8 +16,16 @@
 <body class="page__body">
   <header class="main-header">
     <a class="main-header__logo-link" href="#">
-      <img class="main-header__logo-image logo-image" src="#" width="33" height="38" alt="Логотип КэтЭнерджи">
-      <img class="main-header__logo-text logo-text" src="#" width="101" height="18" alt="КэтЭнерджи">
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./images/cat-logo-icon-desktop.svg" type="image/svg+xml" width="70" height="59">
+        <source media="(min-width: 768px)" srcset="./images/cat-logo-icon-tablet.svg" type="image/svg+xml" width="60" height="50">
+        <img class="main-header__logo-image logo-image" src="./images/cat-logo-icon-mobile.svg" width="33" height="38" alt="Логотип КэтЭнерджи">
+      </picture>
+      <picture>
+        <source media="(min-width: 1440px)" srcset="./images/logo text-desktop.svg" type="image/svg+xml" width="118" height="21">
+        <source media="(min-width: 768px)" srcset="./images/logo text-tablet.svg" type="image/svg+xml" width="101" height="18">
+        <img class=" main-header__logo-text logo-text" src="./images/logo-text-main-mobile.svg" width="101" height="18" alt="КэтЭнерджи">
+      </picture>
     </a>
     <nav class="main-nav">
       <button class="main-nav__toggle" type="button">
@@ -149,7 +157,7 @@
     <h2 class="visually-hidden">Наши контакты</h2>
     <div class="main-footer__logo">
       <a class="main-footer__logo-link" href="#">
-        <img class="main-footer__logo-text logo-text" src="#" width="101" height="18" alt="КэтЭнерджи">
+        <img class="main-footer__logo-text logo-text" src="./images/logo-text-main-mobile.svg" width="128" height="24" alt="КэтЭнерджи">
       </a>
     </div>
     <div class="main-footer__social social">
