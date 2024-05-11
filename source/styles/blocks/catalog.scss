@@ -1,14 +1,35 @@
 .catalog {
   background-color: #f2f2f2;
+  position: relative;
 }
 
 // .catalog__card {
 
 // }
 
-// .catalog__card--loss {
+.catalog__card--loss::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#catalog-slim-cat");
+  background-repeat: no-repeat;
+  background-size: 50px 53px;
+  width: 50px;
+  height: 53px;
+  top: -10px;
+  left: 20px;
+}
 
-// }
+.catalog__card--gain::after {
+  content: "";
+  position: absolute;
+  background-image: url("../../icons/stack.svg#catalog-strong-cat");
+  background-repeat: no-repeat;
+  background-size: 68px 50px;
+  width: 68px;
+  height: 50px;
+  top: 185px;
+  left: 12px;
+}
 
 .catalog__title {
   font-family: "Oswald", sans-serif;
@@ -17,6 +38,9 @@
   color: #000000;
   background-color: #f2f2f2;
   text-transform: uppercase;
+  text-align: center;
+  margin-left: 91px;
+  padding: 0;
 }
 
 .catalog__text {

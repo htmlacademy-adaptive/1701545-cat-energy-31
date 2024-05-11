@@ -2,18 +2,34 @@
 
 // }
 
-// .step--one {
+.step--one::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#instruction-leaf-icon");
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
 
-// }
+.step--two::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#instruction-water-icon");
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
 
-// .step--two {
+.step--three::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#instruction-tableware-icon");
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
 
-// }
-
-// .step--three{
-
-// }
-
-// .step--four {
-
-// }
+.step--four::before {
+  content: "";
+  background-image: url("../../icons/stack.svg#instruction-clock-icon");
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+}
