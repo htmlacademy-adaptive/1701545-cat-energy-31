@@ -2,9 +2,17 @@
 
 // }
 
-// .main-nav__toggle {
+.main-nav__toggle {
+  background-image: url("../../icons/stack.svg#button-open-mobile");
+  background-color: #ffffff;
+  background-size: 24px 24px;
+  width: 24px;
+  height: 24px;
+}
 
-// }
+.main-nav__toggle--close {
+  background-image: url("../../icons/stack.svg#button-close-mobile");
+}
 
 // .main-nav__list {
 
