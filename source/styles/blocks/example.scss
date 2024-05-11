@@ -58,7 +58,7 @@
   left: 20px;
 }
 
-&::before {
+.example__slider-button::before {
   content: "";
   background-color: #ffffff;
   border-radius: 50%;
@@ -71,7 +71,7 @@
   transform: translate(-50%);
 }
 
-&::after {
+.example__slider-button::after {
   content: "";
   background-color: #666666;
   width: 24px;
