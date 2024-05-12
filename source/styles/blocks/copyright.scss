@@ -1,6 +1,7 @@
-// .copyright {
-
-// }
+.copyright {
+  display: flex;
+  justify-content: space-between;
+}
 
 .copyright__link {
   font-size: 16px;
@@ -8,10 +9,18 @@
   text-decoration: none;
 }
 
-// .copyright__link--html-academy {
+.copyright__link-text {
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: none;
+  color: #444444;
+}
 
-// }
-
-// .copyright__image {
-
-// }
+.copyright__link--html-academy {
+  content: "";
+  width: 27px;
+  height: 34px;
+  background-color: #666666;
+  mask-image: url("../../icons/stack.svg#html-academy-icon");
+  display: block;
+}

@@ -1,7 +1,27 @@
 .gift-banner {
+  background-image: url("../../images/cat-banner-bg-desktop@1x.png");
+  background-repeat: no-repeat;
+  background-size: 280px 290px;
+  margin: 0;
+  padding: 0;
+  min-height: 290px;
+  min-width: 280px;
   background-color: $base-color-green;
 }
 
 .gift-banner__text {
   color: #ffffff;
+  padding: 86px 61px 43px;
+  margin: 0;
+  display: block;
+  max-width: 161px;
+  text-align: center;
+}
+
+.gift-banner__text::before {
+  content: "";
+  display: block;
+  background-image: url("../../icons/stack.svg#gift-banner-icon");
+  background-position: center;
+  height: 80px;
 }
