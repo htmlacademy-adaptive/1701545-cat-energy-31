@@ -25,6 +25,10 @@
   height: 17px;
 }
 
+.social__link--vkontakte:hover {
+  background-color: $base-color-green;
+}
+
 .social__link--youtube {
   display: block;
   background-color: #666666;
@@ -33,6 +37,10 @@
   mask-repeat: no-repeat;
   width: 24px;
   height: 18px;
+}
+
+.social__link--youtube:hover {
+  background-color: $base-color-green;
 }
 
 .social__link--telegram {
