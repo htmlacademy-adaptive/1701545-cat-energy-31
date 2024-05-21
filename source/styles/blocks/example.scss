@@ -132,3 +132,23 @@
     min-width: 120px;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .example__wrapper {
+    width: 769px;
+    margin: 0 auto;
+  }
+
+  .example__info-price-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 368px;
+  }
+
+  .example__result {
+    display: flex;
+    justify-content: space-between;
+    width: 327px;
+  }
+}
