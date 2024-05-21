@@ -28,7 +28,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .instruction__wrapper {
+  .instructions__wrapper {
     width: 768px;
     margin: 0 auto;
   }
@@ -51,7 +51,7 @@
 }
 
 @media (min-width: $desktop-width) {
-  .instruction__wrapper {
+  .instructions__wrapper {
     width: 1220px;
     margin: 0 auto;
   }
