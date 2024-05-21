@@ -2,6 +2,14 @@
 
 // }
 
+@media (min-width: $tablet-width) {
+  .step--one::before {
+    background-image: url("../../icons/stack.svg#instruction-leaf-icon");
+    width: 80px;
+    height: 80px;
+  }
+}
+
 .step--one::before {
   content: "";
   background-image: url("../../icons/stack.svg#instruction-leaf-icon");

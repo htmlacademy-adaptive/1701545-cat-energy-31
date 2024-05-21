@@ -1,6 +1,26 @@
-// .site-list {
+.site-list {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
 
-// }
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    width: 436px;
+  }
+}
+
+
+@media (min-width: $tablet-width) {
+  .site-list {
+    display: flex;
+    flex-direction: row;
+    width: 475px;
+  }
+}
 
 .site-list__item {
   list-style: none;
