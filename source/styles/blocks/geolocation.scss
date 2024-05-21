@@ -8,11 +8,20 @@
   line-height: 20px;
   color: #111111;
   text-transform: uppercase;
+  width: 140px;
+  margin-left: 20px;
 }
 
 .geolocation__adress {
   font-size: 14px;
   line-height: 20px;
+}
+
+.geolocation__adress-wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  margin: 0 auto;
 }
 
 // .geolocation__map {
