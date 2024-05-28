@@ -3,6 +3,11 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+}
+
+.main-footer__wrapper {
+  display: flex;
 }
 
 .main-footer__logo {
@@ -11,7 +16,6 @@
 
 .main-footer__logo-link {
   width: 128px;
-  margin-left: 96px;
 }
 
 .main-footer__logo-text {
@@ -34,10 +38,29 @@
     min-height: 147px;
     padding: 0 30px;
     display: flex;
-    min-width: 768px;
+    margin: 0 auto;
     flex-direction: row;
   }
 
+  .main-footer__logo,
+  .main-footer__logo-link {
+    width: 128px;
+    margin: 0;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .main-footer {
+    background-color: #f2f2f2;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 147px;
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .main-footer__logo,
   .main-footer__logo-link {
     width: 128px;
     margin: 0;
