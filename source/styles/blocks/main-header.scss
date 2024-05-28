@@ -5,6 +5,8 @@
 
 .main-header__logo-link {
   text-decoration: none;
+  display: flex;
+  align-items: center;
 }
 
 .main-header__logo-image {
@@ -27,6 +29,14 @@
 }
 
 @media (min-width: $mobile-width-only) {
+  .main-header {
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
   .main-header__toggle {
     display: none;
   }

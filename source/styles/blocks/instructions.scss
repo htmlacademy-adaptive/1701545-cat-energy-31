@@ -2,14 +2,14 @@
   background-color: #ffffff;
 }
 
-.instructions__wrapper {
-  width: 320px;
-  margin: 0 auto;
-}
-
 // .instructions__title {
 
 // }
+.instructions__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
 
 .instructions__list {
   flex-flow: column wrap;

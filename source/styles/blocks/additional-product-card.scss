@@ -1,6 +1,7 @@
-// .additional-product-card {
-
-// }
+.additional-product-card {
+  display: flex;
+  flex-direction: column;
+}
 
 .additional-product-card__title {
   font-family: "Oswald", sans-serif;
@@ -11,6 +12,8 @@
 }
 
 .additional-product-card__content {
+  display: flex;
+  justify-content: space-between;
   font-size: 14px;
   line-height: 14px;
 }

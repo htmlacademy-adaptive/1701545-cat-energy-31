@@ -1,6 +1,12 @@
-// .subscribe {
+.subscribe {
+  border-top: 2px solid #68b738;
+  padding-bottom: 40px;
+}
 
-// }
+.subscribe__wrapper {
+  width: 320px;
+  margin: 0 auto;
+}
 
 .subscribe__title {
   font-family: "Oswald", sans-serif;
@@ -31,4 +37,18 @@
 .subscribe__button {
   font-size: 20px;
   line-height: 26px;
+}
+
+@media (min-width: $tablet-width) {
+  .subscribe__wrapper {
+    width: 768px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .subscribe__wrapper {
+    width: 1200px;
+    margin: 0 auto;
+  }
 }

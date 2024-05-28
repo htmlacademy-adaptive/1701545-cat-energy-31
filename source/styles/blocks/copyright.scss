@@ -1,12 +1,16 @@
 .copyright {
-  display: flex;
-  justify-content: space-between;
+  margin: 0 auto;
+  padding-left: 20px;
 }
 
 .copyright__link {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   font-size: 16px;
   line-height: 20px;
   text-decoration: none;
+  width: 280px;
 }
 
 .copyright__link-text {
@@ -14,13 +18,31 @@
   line-height: 20px;
   text-decoration: none;
   color: #444444;
+  width: 113px;
+  margin-right: 10px;
 }
 
-.copyright__link--html-academy {
+.copyright__link--html-academy::after {
   content: "";
   width: 27px;
   height: 34px;
   background-color: #666666;
   mask-image: url("../../icons/stack.svg#html-academy-icon");
   display: block;
+}
+
+@media (min-width: $tablet-width) {
+  .copyright__link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 16px;
+    line-height: 20px;
+    text-decoration: none;
+    width: 168px;
+  }
+
+  .copyright {
+    margin: 0;
+  }
 }

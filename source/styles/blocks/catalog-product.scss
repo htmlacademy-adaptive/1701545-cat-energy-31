@@ -2,14 +2,72 @@
   background-color: #ffffff;
 }
 
+.catalog-product__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
 .catalog-product__title {
   font-family: "Oswald", sans-serif;
 }
 
 .catalog-product__list {
   list-style-type: none;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  margin: 0;
+  align-items: center;
 }
 
-// .catalog-product__item {
+.catalog-product__item {
+  border-top: 1px solid #f2f2f2;
+  flex-flow: column wrap;
+  width: 320px;
+  display: flex;
+}
 
-// }
+@media (min-width: $tablet-width) {
+  .catalog-product__list {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 60px;
+    width: 708px;
+  }
+
+  .catalog-product__item {
+    background: linear-gradient(#ffffff 16%, #f2f2f2 0%);
+    border: none;
+    width: 324px;
+    height: 511px;
+    padding: 0;
+  }
+
+  .catalog-product__wrapper {
+    margin: 0 auto;
+    width: 768px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .catalog-product__list {
+    gap: 80px;
+    margin: 0 auto;
+    width: 1220px;
+    padding: 0;
+  }
+
+  .catalog-product__item {
+    background: linear-gradient(#ffffff 13%, #f2f2f2 0%);
+    border: none;
+    width: 245px;
+    height: 500px;
+    padding: 0;
+  }
+
+  .catalog-product__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+    padding: 0;
+  }
+}
