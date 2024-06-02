@@ -2,14 +2,6 @@
 
 // }
 
-@media (min-width: $tablet-width) {
-  .step--one::before {
-    background-image: url("../../icons/stack.svg#instruction-leaf-icon");
-    width: 80px;
-    height: 80px;
-  }
-}
-
 .step--one::before {
   content: "";
   background-image: url("../../icons/stack.svg#instruction-leaf-icon");
@@ -40,4 +32,59 @@
   width: 60px;
   height: 60px;
   display: inline-block;
+}
+
+@media (min-width: $tablet-width) {
+  .step--one {
+    background-image: url("../../icons/step-one.svg");
+    background-size: 112px 230px;
+    background-repeat: no-repeat;
+    background-position: 100px 40px;
+  }
+
+  .step--one::before {
+    margin-top: 40px;
+    bottom: 10px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .step--two {
+    background-image: url("../../icons/step-two.svg");
+    background-size: 112px 230px;
+    background-repeat: no-repeat;
+    background-position: 130px 40px;
+  }
+
+  .step--two::before {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .step--three {
+    background-image: url("../../icons/step-three.svg");
+    background-size: 112px 230px;
+    background-repeat: no-repeat;
+    background-position: 130px 40px;
+  }
+
+  .step--three::before {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
+
+  .step--four {
+    background-image: url("../../icons/step-four.svg");
+    background-size: 134px 230px;
+    background-repeat: no-repeat;
+    background-position: 112px 40px;
+  }
+
+  .step--four::before {
+    margin-top: 40px;
+    width: 80px;
+    height: 80px;
+  }
 }

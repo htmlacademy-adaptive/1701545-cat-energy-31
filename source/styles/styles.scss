@@ -7,6 +7,7 @@
 
 /* BLOCKS */
 /* Главная страница */
+@import "./blocks/page.scss";
 @import "./blocks/title.scss";
 @import "./blocks/main-header.scss";
 @import "./blocks/logo-image.scss";
@@ -32,6 +33,7 @@
 @import "./blocks/copyright.scss";
 
 /* Страница каталога */
+@import "./blocks/site-list-catalog.scss";
 @import "./blocks/catalog-product.scss";
 @import "./blocks/product-card.scss";
 @import "./blocks/additional-product.scss";

@@ -9,8 +9,8 @@
   justify-content: space-between;
   width: 280px;
   min-height: 22px;
-  margin: 0 20px;
-  padding: 20px 74px;
+  margin: 0 auto;
+  padding: 17px 75px 15px;
   display: flex;
 }
 
@@ -68,5 +68,8 @@
 @media (min-width: $tablet-width) {
   .social__list {
     border: none;
+    width: 132px;
+    padding: 0;
+    margin-left: 55px;
   }
 }

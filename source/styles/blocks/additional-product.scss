@@ -1,16 +1,20 @@
-// .additional-product {
-
-// }
 .additional-product {
   width: 320px;
-  margin: 0 auto;
+  border-top: 2px solid #68b738;
+  margin: 36px auto 53px;
 }
 
 .additional-product__title {
-  font-size: 24px;
-  line-height: 24px;
   color: #000000;
+  text-align: center;
+  background-color: #ffffff;
+  width: 266px;
+  margin-top: -13px;
+  margin-bottom: 35px;
   font-family: "Oswald", sans-serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 24px;
 }
 
 .additional-product__list {
@@ -19,44 +23,73 @@
   padding: 0;
   display: flex;
   flex-direction: column;
-  width: 320px;
-  padding-bottom: 20px;
+  width: 280px;
 }
-
-// .additional-product__item {
-
-// }
 
 @media (min-width: $tablet-width) {
   .additional-product {
     width: 768px;
     margin: 0 auto;
+    margin-bottom: 96px;
+  }
+
+  .additional-product__title {
+    text-align: center;
+    background-color: #ffffff;
+    width: 381px;
+    margin-top: -15px;
+    margin-bottom: 80px;
+    margin-left: 30px;
+    font-size: 32px;
+    line-height: 32px;
+  }
+
+  .additional-product-card {
+    padding: 26px 38px 28px;
   }
 
   .additional-product__list {
     list-style-type: none;
-    padding: 26px 38px 28px;
+    padding: 0;
     display: flex;
     flex-direction: column;
     width: 708px;
+    margin-bottom: 70px;
   }
 }
 
 @media (min-width: $desktop-width) {
+  .additional-product__title {
+    text-align: center;
+    background-color: #ffffff;
+    width: 456px;
+    margin-top: -23px;
+    margin-bottom: 80px;
+    margin-left: -40px;
+    font-size: 40px;
+    line-height: 40px;
+  }
+  
   .additional-product__wrapper {
     display: flex;
   }
 
   .additional-product {
-    width: 1220px;
+    width: 1440px;
     margin: 0 auto;
+    padding: 0 110px;
   }
 
   .additional-product__list {
+    border-top: solid 1px #cdcdcd;
     list-style-type: none;
-    padding: 26px 38px 28px;
+    padding: 0 0 48px;
     display: flex;
     flex-direction: column;
-    width: 1220px;
+    width: 896px;
+  }
+
+  .additional-product__item {
+    display: flex;
   }
 }

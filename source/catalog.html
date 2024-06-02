@@ -13,41 +13,45 @@
   <script src="scripts/index.js" defer></script>
 </head>
 
-<body class="page__body">
+<body class="page__body-catalog">
   <header class="main-header">
-    <a class="main-header__logo-link" href="index.html">
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/cat-logo-icon-desktop.svg" type="image/svg+xml" width="70" height="59">
-        <source media="(min-width: 768px)" srcset="./images/cat-logo-icon-tablet.svg" type="image/svg+xml" width="60" height="50">
-        <img class="main-header__logo-image logo-image" src="./images/cat-logo-icon-mobile.svg" width="33" height="38" alt="Логотип КэтЭнерджи">
-      </picture>
-      <picture>
-        <source media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21">
-        <source media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" type="image/svg+xml" width="101" height="18">
-        <img class=" main-header__logo-text logo-text" src="./images/logo-text-main-mobile.svg" width="101" height="18" alt="КэтЭнерджи">
-      </picture>
-    </a>
-    <button class="main-header__toggle main-header__toggle--close" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <nav class="main-nav">
-      <ul class="main-nav__list site-list">
-        <li class="site-list__item">
-          <a class="site-list__link" href="index.html">
-            Главная
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link site-list__link--current" href="#">
-            Каталог продукции
-          </a>
-        </li>
-        <li class="site-list__item">
-          <a class="site-list__link" href="#">
-            Подбор программы
-          </a>
-        </li>
-      </ul>
+    <div class="main-header__logo">
+      <a class="main-header__logo-link" href="index.html">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/cat-logo-icon-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="./images/cat-logo-icon-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="main-header__logo-image logo-image" src="./images/cat-logo-icon-mobile.svg" width="33" height="38" alt="Логотип КэтЭнерджи">
+        </picture>
+        <picture>
+          <source media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21">
+          <source media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" type="image/svg+xml" width="101" height="18">
+          <img class="main-header__logo-text logo-text" src="./images/logo-text-main-mobile.svg" width="101" height="19" alt="КэтЭнерджи">
+        </picture>
+      </a>
+    </div>
+    <nav class="main-nav main-nav--closed main-nav--nojs">
+      <button class="main-nav__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <div class="main-nav__wrapper">
+        <ul class="main-nav__list site-list site-list-catalog">
+          <li class="site-list__item">
+            <a class="site-list__link site-list-catalog__link" href="index.html">
+              Главная
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list__link--current site-list-catalog__link site-list-catalog__link-current" href="#">
+              Каталог продукции
+            </a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link site-list-catalog__link" href="#">
+              Подбор программы
+            </a>
+          </li>
+        </ul>
+      </div>
     </nav>
   </header>
 
@@ -332,19 +336,15 @@
     <section class="geolocation">
       <div class="geolocation__adress-wrapper">
         <h2 class="visually-hidden">Наша геолокация</h2>
-        <p class="geolocation__text">приглашаем
-          к сотрудничеству
+        <p class="geolocation__text">приглашаем <br> к сотрудничеству
           дилеров!</p>
         <address class="geolocation__adress adress">ул. Большая
-          Конюшенная, д. 19/8<br>
-          Санкт-Петербург</address>
+          Конюшенная, д. 19/8
+          <span class="geolocation__adress geolocation__adress--city">Санкт-Петербург</span>
+        </address>
       </div>
       <div class="geolocation__map map">
-        <picture>
-          <source type="image/png" width="1440" height="400" media="(min-width: 1440px)" srcset="./images/map-bg-desktop@1x.png 1x, ./images/map-bg-desktop@2x.png 2x">
-          <source type="image/png" width="768" height="400" media="(min-width: 768px)" srcset="./images/map-bg-tablet@1x.png 1x, ./images/map-bg-tablet@2x.png 2x">
-          <img class="map" src="./images/map-bg-mobile@1x.png" srcset="./images/map-bg-mobile@2x.png 2x" width="320" height="362" alt="Наше местонахождение на карте">
-        </picture>
+        <iframe class="map__iframe" src="https://yandex.ru/map-widget/v1/?um=constructor%3A084b221ab86eb6e3de38e3f2d3de71bb57e646553e6f520438b1a4688fac00bb&amp;source=constructor" width="320" height="400"></iframe>
       </div>
     </section>
 

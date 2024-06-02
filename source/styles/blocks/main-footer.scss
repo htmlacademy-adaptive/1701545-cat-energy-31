@@ -11,11 +11,14 @@
 }
 
 .main-footer__logo {
-  width: 128px;
+  display: block;
+  text-align: center;
+  padding: 40px 96px 14px;
 }
 
 .main-footer__logo-link {
   width: 128px;
+  display: block;
 }
 
 .main-footer__logo-text {
@@ -38,7 +41,6 @@
     min-height: 147px;
     padding: 0 30px;
     display: flex;
-    margin: 0 auto;
     flex-direction: row;
   }
 
@@ -46,23 +48,13 @@
   .main-footer__logo-link {
     width: 128px;
     margin: 0;
+    padding: 0;
   }
 }
 
 @media (min-width: $desktop-width) {
   .main-footer {
-    background-color: #f2f2f2;
-    justify-content: space-between;
-    align-items: center;
-    min-height: 147px;
-    padding: 0 30px;
-    display: flex;
-    flex-direction: row;
-  }
-
-  .main-footer__logo,
-  .main-footer__logo-link {
-    width: 128px;
-    margin: 0;
+    padding: 0 110px;
+    min-height: 169px;
   }
 }
