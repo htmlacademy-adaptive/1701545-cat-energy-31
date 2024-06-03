@@ -74,10 +74,6 @@
   margin-top: 20px;
 }
 
-// .example__info-price {
-
-// }
-
 .example__slider-cat {
   position: relative;
   margin-top: 20px;
@@ -97,35 +93,35 @@
   position: absolute;
   top: 0;
   left: 50%;
-}
 
-.example__slider-button::before {
-  content: "";
-  background-color: #ffffff;
-  border-radius: 50%;
-  border: solid 2px #666666;
-  width: 40px;
-  height: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%);
-}
+  &::before {
+    content: "";
+    background-color: #ffffff;
+    border-radius: 50%;
+    border: solid 2px #666666;
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%);
+  }
 
-.example__slider-button::after {
-  content: "";
-  background-color: #666666;
-  width: 24px;
-  height: 18px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 70%);
-  padding: 0;
-  mask-image: url("../../icons/stack.svg#slider-button-arrow");
-  mask-size: 24px 18px;
-  mask-position: 50%;
-  mask-repeat: no-repeat;
+  &::after {
+    content: "";
+    background-color: #666666;
+    width: 24px;
+    height: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, 70%);
+    padding: 0;
+    mask-image: url("../../icons/stack.svg#slider-button-arrow");
+    mask-size: 24px 18px;
+    mask-position: 50%;
+    mask-repeat: no-repeat;
+  }
 }
 
 .example__image-cat {

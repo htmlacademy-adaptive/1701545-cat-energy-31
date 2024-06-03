@@ -15,16 +15,17 @@
   max-width: 161px;
   text-align: center;
   padding-top: 43px;
-}
 
-.gift-banner__text::before {
-  content: "";
-  display: block;
-  background-image: url("../../icons/stack.svg#gift-banner-icon");
-  background-size: 78px 80px;
-  background-repeat: no-repeat;
-  background-position: 50% 18px;
-  height: 144px;
+
+  &::before {
+    content: "";
+    display: block;
+    background-image: url("../../icons/stack.svg#gift-banner-icon");
+    background-size: 78px 80px;
+    background-repeat: no-repeat;
+    background-position: 50% 18px;
+    height: 144px;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -36,14 +37,14 @@
     height: 200px;
     width: 707px;
     position: relative;
-  }
 
-  .gift-banner__text::before {
-    width: 81px;
-    position: absolute;
-    background-size: cover;
-    top: 9px;
-    left: 77px;
+    &::before {
+      width: 81px;
+      position: absolute;
+      background-size: cover;
+      top: 9px;
+      left: 77px;
+    }
   }
 
   .gift-banner__text {

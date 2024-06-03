@@ -1,37 +1,41 @@
-// .step {
-
-// }
-
-.step--one::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#instruction-leaf-icon");
-  width: 60px;
-  height: 60px;
-  display: inline-block;
+.step--one {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#instruction-leaf-icon");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
 }
 
-.step--two::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#instruction-water-icon");
-  width: 60px;
-  height: 60px;
-  display: inline-block;
+.step--two {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#instruction-water-icon");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
 }
 
-.step--three::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#instruction-tableware-icon");
-  width: 60px;
-  height: 60px;
-  display: inline-block;
+.step--three {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#instruction-tableware-icon");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
 }
 
-.step--four::before {
-  content: "";
-  background-image: url("../../icons/stack.svg#instruction-clock-icon");
-  width: 60px;
-  height: 60px;
-  display: inline-block;
+.step--four {
+  &::before {
+    content: "";
+    background-image: url("../../icons/stack.svg#instruction-clock-icon");
+    width: 60px;
+    height: 60px;
+    display: inline-block;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -40,13 +44,14 @@
     background-size: 112px 230px;
     background-repeat: no-repeat;
     background-position: 100px 40px;
-  }
 
-  .step--one::before {
-    margin-top: 40px;
-    bottom: 10px;
-    width: 80px;
-    height: 80px;
+
+    &::before {
+      margin-top: 40px;
+      bottom: 10px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .step--two {
@@ -54,12 +59,13 @@
     background-size: 112px 230px;
     background-repeat: no-repeat;
     background-position: 130px 40px;
-  }
 
-  .step--two::before {
-    margin-top: 40px;
-    width: 80px;
-    height: 80px;
+
+    &::before {
+      margin-top: 40px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .step--three {
@@ -67,12 +73,12 @@
     background-size: 112px 230px;
     background-repeat: no-repeat;
     background-position: 130px 40px;
-  }
 
-  .step--three::before {
-    margin-top: 40px;
-    width: 80px;
-    height: 80px;
+    &::before {
+      margin-top: 40px;
+      width: 80px;
+      height: 80px;
+    }
   }
 
   .step--four {
@@ -80,11 +86,11 @@
     background-size: 134px 230px;
     background-repeat: no-repeat;
     background-position: 112px 40px;
-  }
 
-  .step--four::before {
-    margin-top: 40px;
-    width: 80px;
-    height: 80px;
+    &::before {
+      margin-top: 40px;
+      width: 80px;
+      height: 80px;
+    }
   }
 }

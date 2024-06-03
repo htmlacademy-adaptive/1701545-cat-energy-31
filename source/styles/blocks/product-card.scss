@@ -35,11 +35,11 @@
   text-decoration: none;
   width: 280px;
   padding: 10px 0;
-}
 
-.product-card__button-all-products:hover,
-.product-card__button-all-products:active {
-  background-color: #ebebeb;
+  &:hover,
+  & :active {
+    background-color: #ebebeb;
+  }
 }
 
 .product-card__link-image {
@@ -112,16 +112,16 @@
   margin-top: 18px;
   width: 100%;
   box-sizing: border-box;
-}
 
-.product-card__button:hover {
-  cursor: pointer;
-  background-color: #5eaa2f;
-}
+  &:hover {
+    cursor: pointer;
+    background-color: #5eaa2f;
+  }
 
-.product-card .product-card__button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5eaa2f;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
 }
 
 @media (min-width: $tablet-width) {

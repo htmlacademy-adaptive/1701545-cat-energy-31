@@ -38,15 +38,15 @@
   font-family: "Oswald", sans-serif;
   text-decoration: none;
   padding: 10px 109px;
-}
 
-.additional-product-card__button:hover {
-  background-color: #5eaa2f;
-}
+  &:hover {
+    background-color: #5eaa2f;
+  }
 
-.additional-product-card__button:active {
-  color: rgba(255, 255, 255, 0.3);
-  background-color: #5eaa2f;
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
+  }
 }
 
 @media (min-width: $tablet-width) {
