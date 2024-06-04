@@ -10,7 +10,10 @@
   <link rel="icon" href="favicons/icon.svg" type="image/svg+xml">
   <link rel="apple-touch-icon" href="favicons/180.png">
   <link rel="manifest" href="manifest.webmanifest">
-  <script src="scripts/index.js" defer></script>
+  <link rel="preload" href="../../fonts/lato/Lato-Regular.woff2" type="fonts/woff2" as="font" crossorigin="anonymous">
+  <link rel="preload" href="../../fonts/lato/Lato-Regular.woff2" type="fonts/woff2" as="font" crossorigin="anonymous">
+  <script src="scripts/index.js" defer>
+  </script>
 
 </head>
 
@@ -67,9 +70,13 @@
           </div>
           <div class="hero__wrapper-promo">
             <picture>
+              <source type="image/webp" media="(min-width: 1440px)" srcset="./images/hero-food-desktop@1x.webp 1x, ./images/hero-food-desktop@2x.webp 2x" width="552" height="499">
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/hero-food-tablet@1x.webp 1x, ./images/hero-food-tablet@2x.webp 2x" width="709" height="609">
+              <source type="image/webp" srcset="./images/hero-food-mobile@1x.webp 1x, ./images/hero-food-mobile@2x.webp 2x" width="280" height="270">
+
               <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="./images/hero-food-desktop@1x.png 1x, ./images/hero-food-desktop@2x.png 2x">
               <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="./images/hero-food-tablet@1x.png 1x, ./images/hero-food-tablet@2x.png 2x">
-              <img class="hero__image hero-image" src="./images/hero-food-mobile@1x.png" srcset="./images/hero-food-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов и кошек">
+              <img class="hero__image hero-image" loading="lazy" src="./images/hero-food-mobile@1x.png" srcset="./images/hero-food-mobile@2x.png 2x" width="280" height="270" alt="Корм для котов и кошек">
             </picture>
           </div>
         </div>
@@ -138,12 +145,15 @@
           </div>
           <div class="example__slider-cat">
             <picture>
+              <source type="image/webp" media="(min-width: 768px)" srcset="./images/slider-fat-cat-tablet@1x.webp 1x, ./images/slider-fat-cat-tablet@2x.webp 2x" width="709" height="609">
+              <source type="image/webp" srcset="./images/slider-fat-cat-mobile@1x.webp 1x, ./images/slider-fat-cat-mobile@2x.webp 2x" width="280" height="256">
+
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider-fat-cat-tablet@1x.png 1x, ./images/slider-fat-cat-tablet@2x.png 2x">
-              <img class="example__image-cat fat-cat" src="./images/slider-fat-cat-mobile@1x.png" srcset="./images/slider-fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
+              <img class="example__image-cat fat-cat" loading="lazy" src="./images/slider-fat-cat-mobile@1x.png" srcset="./images/slider-fat-cat-mobile@2x.png 2x" width="280" height="256" alt="Толстый кот">
             </picture>
             <picture>
               <source width="560" height="512" type="image/png" media="(min-width: 768px)" srcset="./images/slider-slim-cat-tablet@1x.png 1x, ./images/slider-slim-cat-tablet@2x.png 2x">
-              <img class="example__image-cat slim-cat" src="./images/slider-slim-cat-mobile@1x.png" srcset="./images/slider-slim-cat-mobile@2x.png" width="280" height="256" alt="Стройный кот">
+              <img class="example__image-cat slim-cat" loading="lazy" src="./images/slider-slim-cat-mobile@1x.png" srcset="./images/slider-slim-cat-mobile@2x.png" width="280" height="256" alt="Стройный кот">
             </picture>
             <button class="example__slider-button" type="button">
               <span class="visually-hidden">Ползунок с примером "до" и "после"</span>
