@@ -60,8 +60,9 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;
-
-  &:hover {
+  
+  &:hover,
+  &:focus-visible {
     cursor: pointer;
     background-color: #5eaa2f;
   }

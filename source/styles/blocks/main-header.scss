@@ -12,8 +12,17 @@
   text-decoration: none;
   display: flex;
   align-items: center;
-  width: 70%;
+  width: 71%;
   justify-content: space-between;
+
+  &:hover,
+  &:focus-visible {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .main-header__logo-image {
@@ -39,22 +48,26 @@
 
 @media (min-width: $tablet-width) {
   .main-header {
-    margin: 25px auto;
+    &--wrapper-position {
+      margin: 25px auto;
+      width: 704px;
+    }
   }
 
   .main-header__logo-image {
     height: 50px;
+    width: 70px;
   }
 
   .main-header__logo-text {
     height: 100%;
-    width: 101px;
+    width: 100px;
   }
 
   .main-header__logo-link {
     text-decoration: none;
     display: flex;
-    align-items: center;
+    align-items: stretch;
     justify-content: space-between;
     width: 174px;
   }
@@ -73,6 +86,12 @@
     background: none;
     z-index: 2;
     margin: 0 auto;
+
+    &--wrapper-position {
+      margin: 0 auto;
+      min-width: 1440px;
+      padding: 47px 109px 30px;
+    }
   }
 
   .main-header__logo {

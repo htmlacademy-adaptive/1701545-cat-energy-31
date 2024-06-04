@@ -16,7 +16,6 @@
   text-align: center;
   padding-top: 43px;
 
-
   &::before {
     content: "";
     display: block;
@@ -38,6 +37,13 @@
     width: 707px;
     position: relative;
 
+  .gift-banner__text {
+    color: #ffffff;
+    text-align: start;
+    margin: 0 0 0 421px;
+    padding-top: 75px;
+
+
     &::before {
       width: 81px;
       position: absolute;
@@ -45,13 +51,6 @@
       top: 9px;
       left: 77px;
     }
-  }
-
-  .gift-banner__text {
-    color: #ffffff;
-    text-align: start;
-    margin: 0 0 0 421px;
-    padding-top: 75px;
   }
 }
 

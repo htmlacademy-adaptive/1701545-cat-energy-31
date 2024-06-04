@@ -1,16 +1,21 @@
 .example {
   background-color: #eaeaea;
+  min-width: 320px;
+
+  &--wrapper-center {
+    margin: 0 auto;
+  }
 }
 
 .example__wrapper {
   width: 280px;
   margin: 0 auto;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
 
 .example__title {
   font-weight: 400;
-  padding-top: 25px;
+  padding-top: 26px;
   padding-bottom: 40px;
   font-size: 36px;
   line-height: 40px;
@@ -18,7 +23,7 @@
 }
 
 .example__discription {
-  width: 280px;
+  width: 285px;
   font-family: "lato", "Arial", sans-serif;
   font-size: 14px;
   font-weight: 400;
@@ -30,7 +35,7 @@
 .example__info {
   background-image: url("../../icons/stack.svg#example-frame");
   background-repeat: no-repeat;
-  background-size: 124px 70px;
+  background-size: 124px 56px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +50,7 @@
 
 .example__value {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 15px;
   padding-bottom: 10px;
   font-family: "Oswald", sans-serif;
   font-size: 24px;
@@ -83,26 +88,26 @@
 
 .example__slider-button {
   cursor: pointer;
+  background-color: #666666;
+  border: none;
+  border-radius: 2px;
   width: 4px;
   height: 100%;
   padding: 0;
-  background-color: #666666;
-  border-radius: 2px;
-  border: none;
   display: block;
   position: absolute;
   top: 0;
-  left: 50%;
+  left: 49%;
 
   &::before {
     content: "";
     background-color: #ffffff;
+    border: 2px solid #666666;
     border-radius: 50%;
-    border: solid 2px #666666;
     width: 40px;
     height: 40px;
     position: absolute;
-    top: 50%;
+    top: 42%;
     left: 50%;
     transform: translate(-50%);
   }
@@ -113,7 +118,7 @@
     width: 24px;
     height: 18px;
     position: absolute;
-    top: 50%;
+    top: 41%;
     left: 50%;
     transform: translate(-50%, 70%);
     padding: 0;
@@ -121,6 +126,30 @@
     mask-size: 24px 18px;
     mask-position: 50%;
     mask-repeat: no-repeat;
+  }
+
+  &:hover,
+  &:hover::after,
+  &:focus-visible,
+  &:focus-visible::after {
+    background-color: $base-color-green;
+  }
+
+  &:hover::before {
+    color: $base-color-green;
+    border: 2px solid $base-color-green;
+  }
+
+  &:active,
+  &:active::after {
+    background-color: $base-color-green;
+    opacity: 0.8;
+  }
+
+  &:active::before {
+    color: $base-color-green;
+    border: 2px solid $base-color-green;
+    opacity: 0.8;
   }
 }
 
@@ -148,7 +177,7 @@
   }
 
   .example__discription {
-    width: 708px;
+    width: 710px;
     font-family: "lato", "Arial", sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -159,7 +188,7 @@
 
   .example__value {
     text-align: center;
-    padding-top: 20px;
+    padding-top: 14px;
     padding-bottom: 10px;
     font-family: "Oswald", sans-serif;
     font-size: 30px;
@@ -179,17 +208,17 @@
   .example__info {
     background-image: url("../../icons/stack.svg#example-frame");
     background-repeat: no-repeat;
-    background-size: 162px;
+    background-size: 162px 72px;
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 162px;
     height: 77px;
     margin-right: 43px;
-  }
 
-  .example__info:last-child {
-    margin-right: 0;
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .example__result {
@@ -210,6 +239,8 @@
     font-size: 20px;
     line-height: 20px;
     padding-bottom: 9px;
+    width: 100%;
+    text-align: end;
   }
 
   .example__slider-cat {
@@ -217,6 +248,20 @@
     margin: 0 auto;
     min-height: 512px;
     width: 560px;
+  }
+
+  .example__slider-button {
+    left: 277px;
+
+    &::before {
+      top: 46%;
+      left: 50%;
+    }
+
+    &::after {
+      top: 46%;
+      left: 50%;
+    }
   }
 }
 
@@ -230,7 +275,7 @@
 
   .example {
     background: linear-gradient(#ffffff 23%, #f2f2f2 0%);
-    padding-bottom: 75px;
+    padding-bottom: 65px;
   }
 
   .example__title {
@@ -268,14 +313,19 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    width: 368px;
+    width: 366px;
     margin: 0;
   }
 
   .example__result {
-    display: flex;
     justify-content: space-between;
-    width: 327px;
+    width: 366px;
+    display: flex;
+  }
+
+  .example__info-price {
+    width: 174px;
+    text-align: center;
   }
 
   .example__slider-cat {

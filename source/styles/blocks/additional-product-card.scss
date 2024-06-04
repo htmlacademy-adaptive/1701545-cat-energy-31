@@ -4,10 +4,10 @@
   padding-bottom: 19px;
   display: flex;
   flex-direction: column;
-}
 
-.additional-product-card:last-child {
-  border-bottom: 1px solid #cdcdcd;
+  &:last-child {
+    border-bottom: 1px solid #cdcdcd;
+  }
 }
 
 .additional-product-card__title {
@@ -39,7 +39,8 @@
   text-decoration: none;
   padding: 10px 109px;
 
-  &:hover {
+  &:hover,
+  &:focus-visible {
     background-color: #5eaa2f;
   }
 
