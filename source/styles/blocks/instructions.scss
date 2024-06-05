@@ -1,0 +1,140 @@
+.instructions {
+  background-color: #ffffff;
+}
+
+.instructions__title {
+  margin: 20px 0 40px;
+  line-height: 40px;
+  font-weight: 400;
+}
+
+.instructions__wrapper {
+  width: 320px;
+  margin: 0 auto;
+  padding: 0 20px 30px;
+}
+
+.instructions__list {
+  flex-flow: column wrap;
+  justify-content: space-between;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.instructions__item {
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  margin-bottom: 20px;
+  color: #000000;
+}
+
+.instructions__discription {
+  font-size: 14px;
+  line-height: 18px;
+  text-align: left;
+  padding: 0;
+  margin: 0;
+  width: 200px;
+}
+
+@media (min-width: $tablet-width) {
+  .instructions {
+    padding-bottom: 20px;
+    border-bottom: 1px solid #d9d9d9;
+    width: 768px;
+    margin: 0 auto;
+  }
+
+  .instructions__wrapper {
+    width: 708px;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .instructions__wrapper .instructions__title {
+    font-size: 60px;
+    line-height: 60px;
+    padding: 0;
+    margin: 45px 0 32px;
+  }
+
+  .instructions__list {
+    display: flex;
+    flex-direction: row;
+    min-height: 280px;
+    margin-bottom: 27px;
+    padding-top: 0;
+    gap: 37px;
+    margin-right: 74px;
+  }
+
+  .instructions__item {
+    min-height: 280px;
+    width: 250px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: start;
+    margin: 0;
+    padding: 0;
+  }
+
+  .instructions__discription {
+    font-size: 16px;
+    line-height: 24px;
+    text-align: left;
+    padding-top: 31px;
+    padding-bottom: 57px;
+    width: 242px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instructions {
+    padding-bottom: 69px;
+    border: none;
+    width: 1440px;
+    margin: 0 auto;
+  }
+
+  .instructions__wrapper {
+    width: 1220px;
+    margin: 0 auto;
+  }
+
+  .instructions__item {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+  }
+
+  .instructions__list {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .instructions__wrapper .instructions__title {
+    margin: 71px 0 32px;
+    line-height: 60px;
+    font-size: 60px;
+    font-weight: 400;
+  }
+
+  .instructions__list {
+    margin: 0;
+    gap: 20px;
+  }
+
+  .instructions__item {
+    width: 250px;
+    margin-right: -6px;
+  }
+}
