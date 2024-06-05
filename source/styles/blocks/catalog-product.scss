@@ -1,5 +1,6 @@
 .catalog-product {
   background-color: #ffffff;
+  padding-bottom: 36px;
 }
 
 .catalog-product__wrapper {
@@ -32,6 +33,11 @@
 }
 
 @media (min-width: $tablet-width) {
+  .catalog-product {
+    background-color: #ffffff;
+    padding-bottom: 0;
+  }
+
   .catalog-product__title {
     font-family: "Oswald", sans-serif;
     font-size: 60px;
@@ -42,11 +48,11 @@
   }
 
   .catalog-product__list {
-    display: flex;
-    flex-flow: row wrap;
+    flex-flow: wrap;
     gap: 60px;
     width: 708px;
     margin: 0 0 85px 30px;
+    display: flex;
     position: relative;
   }
 
@@ -57,7 +63,7 @@
     border: none;
     width: 324px;
     min-height: 511px;
-    padding: 29px 37px 40px;
+    padding: 29px 37px 41px;
   }
 
 
