@@ -26,7 +26,7 @@
         </picture>
         <picture>
           <source media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21">
-          <source media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" type="image/svg+xml" width="101" height="18">
+          <source media="(min-width: 768px)" srcset="./images/logo-text-desktop.svg" type="image/svg+xml" width="101" height="18">
           <img class="main-header__logo-text logo-text" src="./images/logo-text-main-mobile.svg" width="101" height="19" alt="КэтЭнерджи">
         </picture>
       </a>
@@ -58,7 +58,7 @@
   </header>
 
   <main class="main-container">
-    <section class="catalog-product">
+    <section class="catalog-product" data-test="catalog">
       <div class="catalog-product__wrapper">
         <h2 class="catalog-product__title title">Каталог продукции</h2>
         <ul class="catalog-product__list">
@@ -304,49 +304,51 @@
       </div>
     </section>
 
-    <section class="additional-product">
-      <h2 class="additional-product__title">Дополнительные товары</h2>
-      <div class="additional-product__wrapper">
-        <ul class="additional-product__list">
-          <li class="additional-product__item additional-product-card">
-            <h3 class="additional-product-card__title">Сахарозаменитель</h3>
-            <p class="additional-product-card__content">
-              <span class="additional-product-card__name-product">1 упаковка (100 г)</span>
-              <span class="additional-product-card__price-product">200 ₽</span>
+    <section class="additional-product" data-test="additional">
+      <div class="additional-product__wrapper-position">
+        <h2 class="additional-product__title">Дополнительные товары</h2>
+        <div class="additional-product__wrapper">
+          <ul class="additional-product__list">
+            <li class="additional-product__item additional-product-card">
+              <h3 class="additional-product-card__title">Сахарозаменитель</h3>
+              <p class="additional-product-card__content">
+                <span class="additional-product-card__name-product">1 упаковка (100 г)</span>
+                <span class="additional-product-card__price-product">200 ₽</span>
+              </p>
+              <a class="additional-product-card__button button" href="#">Заказать</a>
+            </li>
+            <li class="additional-product__item additional-product-card">
+              <h3 class="additional-product-card__title">Питьевая вода</h3>
+              <p class="additional-product-card__content">
+                <span class="additional-product-card__name-product">5 литров</span>
+                <span class="additional-product-card__price-product">50 ₽</span>
+              </p>
+              <a class="additional-product-card__button button" href="#">Заказать</a>
+            </li>
+            <li class="additional-product__item additional-product-card">
+              <h3 class="additional-product-card__title">Молоко</h3>
+              <p class="additional-product-card__content">
+                <span class="additional-product-card__name-product">1 литр</span>
+                <span class="additional-product-card__price-product">100 ₽</span>
+              </p>
+              <a class="additional-product-card__button button" href="#">Заказать</a>
+            </li>
+            <li class="additional-product__item additional-product-card">
+              <h3 class="additional-product-card__title">Витамины</h3>
+              <p class="additional-product-card__content">
+                <span class="additional-product-card__name-product">1 упаковка (30 г)</span>
+                <span class="additional-product-card__price-product">300 ₽</span>
+              </p>
+              <a class="additional-product-card__button button" href="#">Заказать</a>
+            </li>
+          </ul>
+          <div class="gift-banner">
+            <p class="gift-banner__text">
+              Закажите все<br>
+              и получите чехол для<br>
+              кота в подарок!<br>
             </p>
-            <a class="additional-product-card__button button" href="#">Заказать</a>
-          </li>
-          <li class="additional-product__item additional-product-card">
-            <h3 class="additional-product-card__title">Питьевая вода</h3>
-            <p class="additional-product-card__content">
-              <span class="additional-product-card__name-product">5 литров</span>
-              <span class="additional-product-card__price-product">50 ₽</span>
-            </p>
-            <a class="additional-product-card__button button" href="#">Заказать</a>
-          </li>
-          <li class="additional-product__item additional-product-card">
-            <h3 class="additional-product-card__title">Молоко</h3>
-            <p class="additional-product-card__content">
-              <span class="additional-product-card__name-product">1 литр</span>
-              <span class="additional-product-card__price-product">100 ₽</span>
-            </p>
-            <a class="additional-product-card__button button" href="#">Заказать</a>
-          </li>
-          <li class="additional-product__item additional-product-card">
-            <h3 class="additional-product-card__title">Витамины</h3>
-            <p class="additional-product-card__content">
-              <span class="additional-product-card__name-product">1 упаковка (30 г)</span>
-              <span class="additional-product-card__price-product">300 ₽</span>
-            </p>
-            <a class="additional-product-card__button button" href="#">Заказать</a>
-          </li>
-        </ul>
-        <div class="gift-banner">
-          <p class="gift-banner__text">
-            Закажите все<br>
-            и получите чехол для<br>
-            кота в подарок!<br>
-          </p>
+          </div>
         </div>
       </div>
     </section>
@@ -357,14 +359,14 @@
         <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
         <form class="subscribe__form" action="https://echo.htmlacademy.ru">
           <label class="visually-hidden" for="e-mail">Введите Ваш e-mail</label>
-          <input class="subscribe__field" id="e-mail" name="e-mail" placeholder="кuklachev@gmail.com" required>
+          <input class="subscribe__field" id="e-mail" name="e-mail" value="КUKLACHEV@GMAIL.COM" placeholder="Введите Ваш e-mail" required>
           <button class="subscribe__button button" type="submit">Подписаться</button>
         </form>
       </div>
     </section>
 
     <section class="geolocation">
-      <div class="geolocation__adress-wrapper">
+      <div class="geolocation__adress-wrapper geolocation__adress-wrapper--change-color">
         <h2 class="visually-hidden">Наша геолокация</h2>
         <p class="geolocation__text">приглашаем <br> к сотрудничеству
           дилеров!</p>
