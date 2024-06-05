@@ -25,6 +25,7 @@
   line-height: 20px;
   font-size: 14px;
   width: 140px;
+  font-style: normal;
 
   &--city {
     display: block;
@@ -36,7 +37,11 @@
   min-height: 112px;
   padding: 25px 20px 26px;
   display: flex;
-  background-color: #f2f2f2;
+  background-color: #ffffff;
+
+  &--change-color {
+    background-color: #f2f2f2;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -47,6 +52,10 @@
     margin: 0 auto;
     padding: 60px 70px;
     display: flex;
+
+    &--change-color {
+      background-color: #f2f2f2;
+    }
   }
 
   .geolocation__text {

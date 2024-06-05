@@ -74,8 +74,8 @@
 
   &:hover::after,
   &:focus-visible::after {
-    background-position: 0;
-    transform: scale(1.5);
+    mask-position: 100%;
+    transform: scale(1.2);
   }
 }
 

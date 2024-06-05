@@ -3,6 +3,7 @@
   display: flex;
   flex-direction: column;
   padding: 0;
+  background-color: #ffffff;
 }
 
 .site-list__item {
@@ -19,7 +20,6 @@
   text-decoration: none;
   display: block;
   padding: 22px 0 23px;
-  border-top: 1px solid #e6e6e6;
   border-bottom: 1px solid #e6e6e6;
 }
 
@@ -46,7 +46,7 @@
     }
 
     &:active {
-      opacity: 0.8;
+      opacity: 0.3;
     }
 
     &--current {
@@ -88,11 +88,11 @@
 
     &:hover,
     &:focus-visible {
-      opacity: 0.6;
+      opacity: 0.8;
     }
 
     &:active {
-      opacity: 0.8;
+      opacity: 0.6;
     }
 
     &--current {
