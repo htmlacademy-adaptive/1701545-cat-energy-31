@@ -1,4 +1,4 @@
-.additional-product__wrapper--position {
+.additional-product__wrapper-position {
   width: 320px;
   margin: 0 auto 53px;
 }
@@ -30,7 +30,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional-product__wrapper--position {
+  .additional-product__wrapper-position {
     width: 768px;
     margin: 0 auto;
     margin-bottom: 96px;
@@ -77,7 +77,7 @@
     display: flex;
   }
 
-  .additional-product__wrapper--position {
+  .additional-product__wrapper-position {
     width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
