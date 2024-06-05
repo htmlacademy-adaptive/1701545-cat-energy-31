@@ -19,7 +19,7 @@
 
 <body class="page__body">
   <div class="page__main-wrapper">
-    <header class="main-header main-header--wrapper-position">
+    <header class="main-header main-header--wrapper-position" data-test="header">
       <div class="main-header__logo">
         <a class="main-header__logo-link" href="#">
           <picture>
@@ -29,7 +29,7 @@
           </picture>
           <picture>
             <source media="(min-width: 1440px)" srcset="./images/logo-text-desktop.svg" type="image/svg+xml" width="118" height="21">
-            <source media="(min-width: 768px)" srcset="./images/logo-text-tablet.svg" type="image/svg+xml" width="101" height="18">
+            <source media="(min-width: 768px)" srcset="./images/logo-text-desktop.svg" type="image/svg+xml" width="101" height="18">
             <img class="main-header__logo-text logo-text" src="./images/logo-text-main-mobile.svg" width="101" height="19" alt="КэтЭнерджи">
           </picture>
         </a>
@@ -61,7 +61,7 @@
     </header>
 
     <main class="main-container">
-      <section class="hero">
+      <section class="hero" data-test="hero">
         <div class="hero__wrapper">
           <div class="hero__wrapper-mobile">
             <h1 class="hero__title title">Функциональное<br>питание для котов</h1>
@@ -81,7 +81,7 @@
           </div>
         </div>
       </section>
-      <section class="catalog">
+      <section class="catalog" data-test="programs">
         <h2 class="visually-hidden">Каталог продукции</h2>
         <div class="catalog__card catalog__card--loss">
           <h3 class="catalog__title catalog-title">Похудение</h3>
@@ -95,7 +95,7 @@
         </div>
       </section>
 
-      <section class="instructions">
+      <section class="instructions" data-test="features">
         <div class="instructions__wrapper">
           <h2 class="instructions__title title">Как это работает</h2>
           <ul class="instructions__list">
@@ -121,7 +121,7 @@
         </div>
       </section>
 
-      <section class="example">
+      <section class="example" data-test="proof">
         <div class="example__wrapper">
           <h2 class="example__title title">Живой пример</h2>
           <p class="example__discription">
@@ -162,7 +162,7 @@
         </div>
       </section>
 
-      <section class="geolocation">
+      <section class="geolocation" data-test="contacts">
         <div class="geolocation__adress-wrapper">
           <h2 class="visually-hidden">Наша геолокация</h2>
           <p class="geolocation__text">приглашаем <br>
@@ -180,7 +180,7 @@
 
     </main>
 
-    <footer class="main-footer">
+    <footer class="main-footer" data-test="footer">
       <h2 class="visually-hidden">Наши контакты</h2>
       <div class="main-footer__logo">
         <a class="main-footer__logo-link" href="#">

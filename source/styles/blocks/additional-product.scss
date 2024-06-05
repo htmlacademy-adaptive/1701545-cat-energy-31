@@ -1,7 +1,10 @@
-.additional-product {
+.additional-product__wrapper--position {
   width: 320px;
-  border-top: 2px solid #68b738;
   margin: 36px auto 53px;
+}
+
+.additional-product {
+  border-top: 2px solid #68b738;
 }
 
 .additional-product__title {
@@ -27,7 +30,7 @@
 }
 
 @media (min-width: $tablet-width) {
-  .additional-product {
+  .additional-product__wrapper--position {
     width: 768px;
     margin: 0 auto;
     margin-bottom: 96px;
@@ -74,7 +77,7 @@
     display: flex;
   }
 
-  .additional-product {
+  .additional-product__wrapper--position {
     width: 1440px;
     margin: 0 auto;
     padding: 0 110px;
