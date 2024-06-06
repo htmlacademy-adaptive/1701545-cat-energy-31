@@ -103,8 +103,8 @@
   .hero__wrapper-mobile {
     background-image: none;
     width: 768px;
-    padding-left: 0;
-    margin-left: 120px;
+    padding-left: 120px;
+    margin: 0;
   }
 
   .hero__title {
@@ -144,7 +144,7 @@
     margin: 0 auto 30px;
     padding-top: 0;
     display: flex;
-    width: 1440px;
+    width: 1220px;
   }
 
   .hero__title {
