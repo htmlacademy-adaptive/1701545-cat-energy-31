@@ -1,6 +1,8 @@
 .catalog-product {
   background-color: #ffffff;
   padding-bottom: 36px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog-product__wrapper {
@@ -36,6 +38,7 @@
   .catalog-product {
     background-color: #ffffff;
     padding-bottom: 0;
+    width: 768px;
   }
 
   .catalog-product__title {
@@ -74,6 +77,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-product {
+    width: 1440px;
+  }
+
   .catalog-product__title {
     margin: 38px 0 82px 110px;
     padding: 0;
