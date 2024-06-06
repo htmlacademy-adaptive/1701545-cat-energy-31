@@ -2,6 +2,8 @@
   display: flex;
   flex-direction: column;
   min-height: 510px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .hero__wrapper {
@@ -23,7 +25,7 @@
 .hero__wrapper-promo {
   justify-content: center;
   width: 100%;
-  margin: -136px 0 0 8px;
+  margin: -133px 0 0;
   display: flex;
 }
 
@@ -81,6 +83,7 @@
     background: #ffffff;
     min-height: 845px;
     margin: 0 auto;
+    width: 768px;
   }
 
   .hero__button-program {
@@ -140,9 +143,10 @@
 @media (min-width: $desktop-width) {
   .hero {
     min-height: 594px;
-    margin: 0 30px 30px;
+    margin: 0 auto 30px;
     padding-top: 0;
     display: flex;
+    width: 1440px;
   }
 
   .hero__title {
