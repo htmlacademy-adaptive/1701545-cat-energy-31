@@ -12,6 +12,7 @@
 
   &--more .product-card__title {
     display: inline-block;
+    color: #111111;
     width: 204px;
     margin: 0;
   }
@@ -33,7 +34,7 @@
   text-align: center;
   text-transform: uppercase;
   background-color: #f2f2f2;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   text-decoration: none;
   width: 280px;
   padding: 10px 0;
@@ -61,7 +62,7 @@
 }
 
 .product-card__link-title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   color: #000000;
   background-color: #ffffff;
   text-decoration: none;
@@ -70,8 +71,8 @@
 }
 
 .product-card__title {
-  font-family: "Oswald", sans-serif;
-  color: #000000;
+  font-family: "Oswald", "Arial", sans-serif;
+  color: #222222;
   background-color: #ffffff;
   font-size: 16px;
   line-height: 20px;
@@ -115,6 +116,7 @@
   margin-top: 18px;
   width: 100%;
   box-sizing: border-box;
+  text-decoration: none;
 
   &:hover,
   &:focus-visible {
@@ -191,10 +193,10 @@
 
   .product-card__link-title,
   .product-card__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 20px;
     line-height: 24px;
-    color: #000000;
+    color: #222222;
     background-color: #f2f2f2;
     text-decoration: none;
     margin: 0 auto;
