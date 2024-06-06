@@ -16,12 +16,12 @@
   background-color: #ffffff;
   width: 236px;
   margin: -14px 0 32px -22px;
-  font-family: "oswald", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: 400;
 }
 
 .subscribe__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #000000;
@@ -39,15 +39,30 @@
 
 .subscribe__field {
   text-transform: uppercase;
-  border: 2px solid #cdcdcd;
+  border: 2px solid #e7e7e7;
   width: 280px;
   height: 56px;
   padding-left: 13px;
-  font-family: "oswald", "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 30px;
 }
+
+.subscribe__field[type="email"]:hover {
+  border: 1px solid #cdcdcd;
+}
+
+.subscribe__field[type="email"]:active,
+.subscribe__field[type="email"]:focus-visible {
+  border: 2px solid #444444;
+  outline: none;
+}
+
+.subscribe__field[type="email"]:invalid {
+  border: 2px solid #ff8282;
+}
+
 
 .subscribe__button {
   text-transform: uppercase;
@@ -56,7 +71,7 @@
   border-style: none;
   margin-top: 16px;
   padding: 15px 81px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 26px;

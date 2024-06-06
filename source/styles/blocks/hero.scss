@@ -2,12 +2,12 @@
   display: flex;
   flex-direction: column;
   min-height: 510px;
+  width: 100%;
 }
 
 .hero__wrapper {
-  margin: 0 auto;
-  max-width: 1220px;
   width: 100%;
+  margin: 0 auto;
 }
 
 .hero__wrapper-mobile {
@@ -16,17 +16,15 @@
   background-position: top;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 302px;
-  width: 320px;
+  min-height: 302px;
   margin: 0 auto;
 }
 
 .hero__wrapper-promo {
   justify-content: center;
   width: 100%;
-  margin: -136px 0 0 8px;
+  margin: -133px 0 0;
   display: flex;
-  position: absolute;
 }
 
 .hero__title {
@@ -40,7 +38,7 @@
 }
 
 .hero__text {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 14px;
   color: #ffffff;
@@ -63,9 +61,9 @@
   margin-left: 20px;
   margin-right: 20px;
   position: relative;
-  top: 300px;
   min-width: 153px;
   display: block;
+  top: 300px;
 
   &:hover,
   &:focus-visible {
@@ -81,12 +79,17 @@
   .hero {
     padding-top: 35px;
     background: #ffffff;
-    height: 845px;
+    min-height: 845px;
     margin: 0 auto;
+    width: 768px;
+  }
+
+  .hero__button-program {
+    top: 0;
   }
 
   .hero__wrapper {
-    width: 769px;
+    width: 768px;
     margin: 0 auto;
   }
 
@@ -94,14 +97,14 @@
     width: 100%;
     margin-top: -98px;
     margin-left: 0;
-    position: static;
+    margin-bottom: -8px;
   }
 
   .hero__wrapper-mobile {
     background-image: none;
     width: 768px;
-    padding-left: 120px;
-    z-index: 3;
+    padding-left: 0;
+    margin-left: 120px;
   }
 
   .hero__title {
@@ -128,7 +131,6 @@
     font-size: 20px;
     line-height: 26px;
     position: relative;
-    top: 0;
     left: 0;
     z-index: 1;
     margin: 0;
@@ -138,10 +140,11 @@
 
 @media (min-width: $desktop-width) {
   .hero {
-    height: 594px;
-    margin: 0 30px 30px;
+    min-height: 594px;
+    margin: 0 auto 30px;
     padding-top: 0;
     display: flex;
+    width: 1440px;
   }
 
   .hero__title {
@@ -149,6 +152,10 @@
     padding-bottom: 35px;
     font-size: 60px;
     line-height: 60px;
+    display: block;
+    overflow: visible;
+    width: 420px;
+    min-height: 120px;
   }
 
   .hero__wrapper {
@@ -159,16 +166,14 @@
 
   .hero__wrapper-mobile {
     background-image: none;
-    padding-left: 80px;
-    padding-top: 45px;
     width: 1220px;
+    padding-top: 45px;
+    padding-left: 80px;
+    margin-left: 0;
   }
 
   .hero__wrapper-promo {
-    position: absolute;
     z-index: 2;
-    margin: 0;
-    left: 114px;
-    top: 142px;
+    margin: -8px 0 0 -780px;
   }
 }

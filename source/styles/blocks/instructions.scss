@@ -30,7 +30,7 @@
   justify-content: space-between;
   width: 280px;
   margin-bottom: 20px;
-  color: #000000;
+  color: #444444;
 }
 
 .instructions__discription {
@@ -117,6 +117,7 @@
     flex-flow: row nowrap;
     justify-content: space-between;
     gap: 20px;
+    flex-wrap: wrap;
   }
 }
 

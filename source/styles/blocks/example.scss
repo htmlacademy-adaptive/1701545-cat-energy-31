@@ -52,7 +52,7 @@
   text-align: center;
   padding-top: 15px;
   padding-bottom: 10px;
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 24px;
   font-weight: 400;
   line-height: 24px;
@@ -69,7 +69,7 @@
 }
 
 .example__result {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-size: 14px;
   line-height: 20px;
   color: #000000;
@@ -190,7 +190,7 @@
     text-align: center;
     padding-top: 14px;
     padding-bottom: 10px;
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 30px;
     font-weight: 400;
     line-height: 37px;
@@ -276,12 +276,15 @@
   .example {
     background: linear-gradient(#ffffff 23%, #f2f2f2 0%);
     padding-bottom: 65px;
+    width: 1440px;
+    margin: 0 auto;
   }
 
   .example__title {
     font-size: 60px;
     line-height: 60px;
     padding: 0 0 146px;
+    width: 400px;
   }
 
   .example__discription {
