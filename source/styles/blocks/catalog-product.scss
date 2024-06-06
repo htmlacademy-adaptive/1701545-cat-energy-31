@@ -1,6 +1,8 @@
 .catalog-product {
   background-color: #ffffff;
   padding-bottom: 36px;
+  width: 320px;
+  margin: 0 auto;
 }
 
 .catalog-product__wrapper {
@@ -8,7 +10,7 @@
 }
 
 .catalog-product__title {
-  font-family: "Oswald", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   padding: 27px 0 36px;
   margin: 0 0 0 20px;
   font-weight: 400;
@@ -36,10 +38,11 @@
   .catalog-product {
     background-color: #ffffff;
     padding-bottom: 0;
+    width: 768px;r
   }
 
   .catalog-product__title {
-    font-family: "Oswald", sans-serif;
+    font-family: "Oswald", "Arial", sans-serif;
     font-size: 60px;
     line-height: 60px;
     padding: 38px 0 84px;
@@ -74,6 +77,10 @@
 }
 
 @media (min-width: $desktop-width) {
+  .catalog-product {
+    width: 1440px;
+  }
+
   .catalog-product__title {
     margin: 38px 0 82px 110px;
     padding: 0;
@@ -89,7 +96,7 @@
     background: linear-gradient(#ffffff 16%, #f2f2f2 0%);
     border: none;
     width: 245px;
-    height: 511px;
+    min-height: 511px;
     padding: 29px 38px 40px;
     display: block;
   }
