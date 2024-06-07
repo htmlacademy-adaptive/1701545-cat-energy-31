@@ -1,7 +1,11 @@
 body {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", "Arial", sans-serif;
   color: $base-color-text;
+  overflow-x: hidden;
   margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
 }
 
 *,
